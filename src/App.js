@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
-
+      
       <Route path='/' element={<Main/>}/>
       <Route path='/1' element={<Second/>}/>
       
