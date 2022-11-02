@@ -5,7 +5,7 @@ const Addtocart = () => {
   return (
     <div>
         <button id='addcart' onClick={()=>setCount(count+1)}>Addtocart</button>
-       {" "} <span>[{count}]</span>
+       {" "} <span id='cartcount'>[{count}]</span>
     </div>
   )
 }
