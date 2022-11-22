@@ -32,7 +32,12 @@ async></script>
     <div id="root">
     </div>
     <script src="./script.js"></script>
-    
+    <script type="text/javascript">
+    var OptiMonkOnReady = function (id) {
+        var adapter = OptiMonk.Visitor.createAdapter();
+        adapter.Cart.add(`product${id}`, {quantity:id, price:100+id});
+    };
+</script>
   
   </body>
 </html>
