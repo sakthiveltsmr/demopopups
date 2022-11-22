@@ -35,7 +35,8 @@ async></script>
     <script type="text/javascript">
     var OptiMonkOnReady = function (id) {
         var adapter = OptiMonk.Visitor.createAdapter();
-      if(id){
+      console.log(id)
+      if(id!==undefined && id !== null){
         adapter.Cart.add(`product${id}`, {quantity:id, price:100+id});
       }
     };
