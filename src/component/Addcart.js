@@ -12,7 +12,7 @@ const Addtocart = () => {
        })
    })
    // eslint-disable-next-line react-hooks/exhaustive-deps
-   },[])
+   },[count])
 
     const update = ()=>{
 
