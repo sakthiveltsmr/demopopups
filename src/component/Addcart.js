@@ -11,6 +11,7 @@ const Addtocart = () => {
        window.OptiMonkOnReady(count)
        })
    })
+   // eslint-disable-next-line react-hooks/exhaustive-deps
    },[])
 
     const update = ()=>{
