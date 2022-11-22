@@ -3,10 +3,13 @@ import React, { useState } from 'react'
 const Addtocart = () => {
     const[count,setCount]=useState(0)
     
+    var OptiMonkOnReady= function(){
+    var cart=window.OptiMonk.Visitor.createAdapter();
+        cart.Cart.add(`product${count}`,{'quantity':count,'price':count+100})
+    }
     const handelsubmit=()=>{
         setCount(count+1)
-        var cart=window.OptiMonk.Visitor.createAdapter();
-        cart.Cart.add(`product${count}`,{'quantity':count,'price':count+100})
+        OptiMonkOnReady()
     }
   return (
     <div>
